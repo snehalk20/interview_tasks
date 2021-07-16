@@ -1,0 +1,172 @@
+[
+  {
+    "description": "    Execute basic test Cases on D3A",
+    "keyword": "Feature",
+    "name": "D3A Basic Test Cases",
+    "line": 1,
+    "id": "d3a-basic-test-cases",
+    "tags": [],
+    "uri": "d3a-basic.feature",
+    "elements": [
+      {
+        "id": "d3a-basic-test-cases;login-precreated-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login Precreated User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I login as a Precreated User",
+            "result": {
+              "status": "passed",
+              "duration": 3150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in successfully",
+            "result": {
+              "status": "passed",
+              "duration": 696000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "d3a-basic-test-cases;create-project",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Create Project",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I login as a Precreated User",
+            "result": {
+              "status": "passed",
+              "duration": 2281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I go to Projects page",
+            "result": {
+              "status": "passed",
+              "duration": 514000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 12,
+            "name": "create a new project",
+            "result": {
+              "status": "passed",
+              "duration": 121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 13,
+            "name": "enter a project name \"Test Project 11\"",
+            "result": {
+              "status": "passed",
+              "duration": 286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 14,
+            "name": "enter a project description \"Test Project Description 11\"",
+            "result": {
+              "status": "passed",
+              "duration": 526000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "* ",
+            "line": 15,
+            "name": "save the project",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 16000ms: Expected <span.GraphQLErrorDisplay__error-msg.library-name-modal__error.> not to exist in the DOM, but it was continuously found.\n    at Context.eval (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:84:45)\n    at Context.resolveAndRunStepDefinition (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:10747:29)\n    at Context.eval (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:10079:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the project \"Test Project 11\" is created and listed successfully",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d3a-basic-test-cases;create-simulation",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Create Simulation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I login as a Precreated User",
+            "result": {
+              "status": "passed",
+              "duration": 2519000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the project is already created",
+            "result": {
+              "status": "passed",
+              "duration": 1181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I create a simulation \"Simulation 11\" for the created project",
+            "result": {
+              "status": "passed",
+              "duration": 1137000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the simulation \"Simulation 11\" is created and listed successfully",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 16000ms: Expected <span.nativeSelect__error-msg> not to exist in the DOM, but it was continuously found.\n    at Context.eval (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:98:48)\n    at Context.resolveAndRunStepDefinition (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:10747:29)\n    at Context.eval (https://www.d3a.io/__cypress/tests?p=cypress\\integration\\d3a-basic.feature:10079:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

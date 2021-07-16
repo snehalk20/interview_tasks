@@ -1,0 +1,9 @@
+{
+    "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 16000,
+    "baseUrl": "https://www.d3a.io/",
+    "retries": {
+        "runMode": 0,
+        "openMode": 0
+      }
+}

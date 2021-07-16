@@ -1,0 +1,29 @@
+{
+  "name": "cypress-automation-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-tests": "npx cypress run --browser=chrome",
+    "generate-report": "node cucumber-html-report.js",
+    "test": "npm run run-tests && npm run generate-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.7.0",
+    "cypress-cucumber-preprocessor": "^4.1.4",
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.18.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
